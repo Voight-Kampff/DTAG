@@ -7,6 +7,14 @@ App::Application.routes.draw do
 
   root "static#home"
 
+  match '/home',         to: 'static#home',    via: 'get'
+  match '/expertise',    to: 'static#expertise',    via: 'get'
+  match '/moyens',       to: 'static#moyens',       via: 'get'
+  match '/services',     to: 'static#services',     via: 'get'
+  match '/produits',     to: 'static#produits',     via: 'get'
+  match '/realisations', to: 'static#realisations', via: 'get'
+  match '/contact',      to: 'static#contact',      via: 'get'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
